@@ -1,0 +1,187 @@
+:root {
+    /* fonts  */
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+    --fs-p5: .5rem;
+    --fs-1: 1rem;
+    --fs-1p5: 1.5rem;
+    --fs-2: 2rem;
+    --fs-3: 3rem;
+    --fs-4: 4rem;
+    --fs-p: rem;
+    --secondary-clr: #36213E;
+    --secondary-clr-light: #554971;
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+    --shadow: 0 0 1em rgba(0, 0, 0, .25);
+    /* button radius */
+    --br: 5px;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+  }
+  
+  .decktitle {
+    color: blue;
+    padding-bottom: .5em;
+  }
+  
+  .cardtitle {
+    color: red;
+    padding-bottom: .3em;
+  }
+  
+  .not-enough-card {
+    color: red;
+    font-size: 1.5em;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100px;
+  }
+  
+  .breadcrumb-nav {
+    border: solid 2px;
+    background-color: white;
+  }
+  
+  .breadcrumb-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: .2em .5em;
+  }
+  
+  .breadcrumbx-item {
+    padding-right: .75rem;
+  }
+  
+  .main-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .deck-container {
+    border: solid black 2px;
+    /* display: flex; */
+    color: black;
+    border: solid 2px darkblue;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+  }
+  
+  .cards-container {
+    /* display: flex; */
+    color: black;
+    border: solid 2px darkblue;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+  }
+  
+  .create-deck {
+    padding-bottom: .2em;
+  }
+  
+  .card-name-number {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .deck-buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .deck-buttons-container button {
+    margin-right: .5em;
+  }
+  
+  .card-name-number, .deck-buttons-container, .card-question {
+    padding: .2em;
+  }
+  
+  h2 {
+    font-size: var(--fs-1p5);
+    font-weight: var(--fw-m);
+    /* margin: 0 0 .5em; */
+  }
+  
+  p {
+    margin: 0 0 var(--spacer);
+  }
+  
+  .button-org {
+    display: inline-block;
+    background: var(--primary-clr);
+    color: white;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: var(--br);
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+  }
+  
+  .button-sm {
+    display: inline-block;
+    background: var(--primary-clr);
+    color: white;
+    text-decoration: none;
+    padding: .5em .75em;
+    border-radius: var(--br);
+    font-weight: var(--fw-n);
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    font-size: .8rem;
+  }
+  
+  .btn-done, .btn-cancel, .btn-flip, .btn-edit, .btn-create, .btn-view {
+    background-color: grey;
+    margin-right: .3rem;
+  }
+  
+  .btn-done:hover, .btn-cancel:hover, .btn-flip:hover, .btn-edit:hover, .btn-create:hover, .btn-view:hover {
+    background-color: rgb(65, 65, 65);
+  }
+  
+  .btn-group-right {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .btn-save, .btn-submit, .btn-study, .btn-add {
+    background-color: rgba(162, 24, 212, 0.807);
+  }
+  
+  .btn-save:hover, .btn-submit:hover, .btn-study:hover, .btn-add:hover {
+    background-color: rgb(3, 3, 139);
+  }
+  
+  .btn-delete {
+    background-color: rgb(119, 18, 18);
+  }
+  
+  .btn-delete:hover {
+    background-color: rgb(230, 49, 49);
+  }
